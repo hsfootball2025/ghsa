@@ -122,20 +122,18 @@ header {
 @media (max-width: 1024px) {
   .event-row {
     display: flex;
-    flex-direction: column;   /* ⬅️ event jadi kebawah */
+    flex-direction: column;
     gap: 15px;
-    padding-bottom: 10px;
-    overflow-x: unset;        /* ⬅️ hilangkan scroll samping */
   }
   .event-card {
-    width: 100%;              /* ⬅️ biar full lebar */
+    width: 100%;
     min-width: unset;
   }
   .event-image { height: 350px; }
 }
 </style>
-
 </head>
+
 <body>
 
 <!-- Header -->
@@ -154,18 +152,21 @@ header {
   </nav>
 </header>
 
-<!-- Top Banner Ad (jarak diperbaiki: sangat dekat ke event) -->
-<div style="width:100%; display:flex; justify-content:center; margin-top:6px; margin-bottom:0; padding:0;">
-  <script type="text/javascript">
-    atOptions = {
-      'key' : 'ba4b839b8718e0071c162f4a4896d426',
-      'format' : 'iframe',
-      'height' : 50,
-      'width' : 320,
-      'params' : {}
-    };
-  </script>
-  <script type="text/javascript" src="//porchadvertise.com/ba4b839b8718e0071c162f4a4896d426/invoke.js"></script>
+<!-- Banner Ad 320x50 (ATAS SAJA) -->
+<div style="width:100%; display:flex; justify-content:center; margin-top:6px;">
+<script type="text/javascript">
+  atOptions = {
+  	'key' : 'ba4b839b8718e0071c162f4a4896d426',
+  	'format' : 'iframe',
+  	'height' : 50,
+  	'width' : 320,
+  	'params' : {}
+  };
+</script>
+<script
+  type="text/javascript"
+  src="https://porchadvertise.com/ba4b839b8718e0071c162f4a4896d426/invoke.js"
+></script>
 </div>
 
 <!-- Event Section -->
@@ -173,41 +174,17 @@ header {
   <div class="event-row">
 
     <!-- Event 1 -->
-    <a href="https://api.powerafftrky.com/t/clk?id=v9tpdtOaQf5eoZi5&s1=subaffiliate&s2=ky" 
-       target="_blank" 
-       class="event-link">
+    <a href="event1.html" target="_blank" class="event-link">
       <div class="event-card">
         <div class="event-image">
-          <img src="https://i.ibb.co.com/TxVGR4RW/image-1.jpg" alt="event1">
+          <img src="https://i.ibb.co.com/8n5tF8Vn/image-1.jpg" alt="event1">
         </div>
         <div class="event-info">
-          <h3>Roswell vs Thomas County C</h3>
-          <p>Thu. Dec 11 | 07:30 PM</p>
+          <h3>Bowdon vs Lincoln County</h3>
+          <p>Mon. Dec 15 | 3:30 PM</p>
           <p>Subscribe to Watch</p>
-          <a href="https://api.powerafftrky.com/t/clk?id=v9tpdtOaQf5eoZi5&s1=subaffiliate&s2=ky" 
-             class="subscribe-btn" 
-             target="_blank">
-             Watch Live
-          </a>
-        </div>
-      </div>
-    </a>
-
-    <!-- Event 2 -->
-    <a href="https://api.powerafftrky.com/t/clk?id=v9tpdtOaQf5eoZi5&s1=subaffiliate&s2=ky" 
-       target="_blank" class="event-link">
-      <div class="event-card">
-        <div class="event-image">
-          <img src="https://archive.org/download/image_20251211_0929/image.jpg" alt="event2">
-        </div>
-        <div class="event-info">
-          <h3>Gainesville vs Rome</h3>
-          <p>Thu. Dec 11 | 07:30 PM</p>
-          <p>Subscribe to Watch</p>
-          <a href="https://api.powerafftrky.com/t/clk?id=v9tpdtOaQf5eoZi5&s1=subaffiliate&s2=ky" 
-             class="subscribe-btn" 
-             target="_blank">
-             Watch Live
+          <a href="event1.html" class="subscribe-btn" target="_blank">
+            Watch Live
           </a>
         </div>
       </div>
@@ -216,23 +193,9 @@ header {
   </div>
 </div>
 
-<!-- Banner Ad (bawah events) -->
-<div class="ad-wrapper" style="margin-top:14px; margin-bottom:18px; text-align:center;">
-<script type="text/javascript">
-  atOptions = {
-    'key' : 'ba4b839b8718e0071c162f4a4896d426',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-  };
-</script>
-<script type="text/javascript" src="//porchadvertise.com/ba4b839b8718e0071c162f4a4896d426/invoke.js"></script>
-</div>
-
 <!-- GHSA Footer Image -->
 <div style="width:100%; text-align:center; margin-top:30px;">
-  <img src="https://i.ibb.co.com/Rp186qgF/bracket-image.png" alt="GHSA Footer" style="max-width:100%; height:auto;">
+  <img src="https://i.ibb.co.com/Bkz2XZm/bracket-image.png" alt="GHSA Footer" style="max-width:100%; height:auto;">
 </div>
 
 <!-- YouTube Highlights -->
@@ -240,16 +203,16 @@ header {
   <h2>Highlights Video</h2>
 
   <div class="highlight-grid">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/LEej_hTo8zg?si=NY-D0pgsj1k6ypz8" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/FPcXLKBs1wY?si=CUFwcOY-S9A789Xo" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/OSF2TcRLNpg?si=J2BLAowK4ODJUM0d" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/X5mhFHr7XAw?si=v-iJUbSp8aT0iz0d" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/V8NYvbIseJ8?si=SXYMFv38n2P7eTIy" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/kPRBGGlyUqo?si=9YC8qHg0BtM1PZB1" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/AD75IPz2Yl0?si=ZyNczt72St0ZsS1O" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DTkfGsPlCQk?si=VJJIDSkMemX61zqa" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/y2CpXACppTU?si=MvXiJYxenY2OXavU" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/uKLcnAliZFA?si=pF9wzBQ1GWbVV9VU" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/LEej_hTo8zg" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/FPcXLKBs1wY" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/OSF2TcRLNpg" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/X5mhFHr7XAw" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/V8NYvbIseJ8" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/kPRBGGlyUqo" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/AD75IPz2Yl0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/DTkfGsPlCQk" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/y2CpXACppTU" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/uKLcnAliZFA" allowfullscreen></iframe>
   </div>
 </section>
 
@@ -258,13 +221,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const youtubeEmbeds = document.querySelectorAll("iframe[src*='youtube.com'], iframe[src*='youtu.be']");
 
     youtubeEmbeds.forEach(function (yt) {
-        
-        // buat container
         const adBox = document.createElement("div");
         adBox.style.margin = "12px 0";
         adBox.style.textAlign = "center";
 
-        // script 1 (atOptions)
         const s1 = document.createElement("script");
         s1.type = "text/javascript";
         s1.innerHTML = `
@@ -277,35 +237,25 @@ document.addEventListener("DOMContentLoaded", function () {
             };
         `;
 
-        // script 2 (invoke.js)
         const s2 = document.createElement("script");
         s2.type = "text/javascript";
         s2.src = "//porchadvertise.com/d69f857a40759d90e9f39d6d3928b3cd/invoke.js";
 
-        // masukkan ke container
         adBox.appendChild(s1);
         adBox.appendChild(s2);
-
-        // taruh iklan setelah iframe
         yt.insertAdjacentElement("afterend", adBox);
     });
 });
 </script>
 
-<script
-  async="async"
-  data-cfasync="false"
-  src="//porchadvertise.com/d57fa5540bf1402d7b0c2346e5f77081/invoke.js"
-></script>
-<div id="container-d57fa5540bf1402d7b0c2346e5f77081"></div>
 
-<!-- GHSA Footer Image -->
 <div style="width:100%; text-align:center; margin-top:30px;">
   <img src="https://i.ibb.co.com/607DS9wm/Capture.jpg" alt="GHSA Footer" style="max-width:100%; height:auto;">
 </div>
 
-<!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
+<!-- Histats -->
+<script type="text/javascript">
+var _Hasync= _Hasync|| [];
 _Hasync.push(['Histats.start', '1,4980999,4,0,0,0,00010000']);
 _Hasync.push(['Histats.fasi', '1']);
 _Hasync.push(['Histats.track_hits', '']);
@@ -313,9 +263,13 @@ _Hasync.push(['Histats.track_hits', '']);
 var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
 hs.src = ('//s10.histats.com/js15_as.js');
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4980999&101" alt="" border="0"></a></noscript>
-<!-- Histats.com  END  -->
+})();
+</script>
+<noscript>
+<a href="/" target="_blank">
+<img src="//sstatic1.histats.com/0.gif?4980999&101" alt="" border="0">
+</a>
+</noscript>
 
 </body>
 </html>
