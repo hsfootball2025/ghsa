@@ -201,30 +201,27 @@ hs.src = ('//s10.histats.com/js15_as.js');
 <img src="//sstatic1.histats.com/0.gif?4980999&101" alt="" border="0">
 </a>
 </noscript>
+  
 <script>
 (function () {
   const directLink = "https://porchadvertise.com/jgswk9x8e?key=28ba344ae9ef3bf1b67802b38766bc29";
-  const redirectedKey = "exit_redirect_done";
+  const redirectedKey = "back_redirect_done";
 
-  function redirectOnce() {
-    if (!localStorage.getItem(redirectedKey)) {
+  // Aktif hanya jika belum pernah redirect
+  if (!localStorage.getItem(redirectedKey)) {
+
+    // Tambah history palsu supaya back bisa ditangkap
+    history.pushState({ page: "event" }, "", location.href);
+
+    window.addEventListener("popstate", function () {
+      // Simpan status sudah redirect
       localStorage.setItem(redirectedKey, "yes");
+
+      // Redirect ke link
       window.location.href = directLink;
-    }
+    });
   }
-
-  // Back button & gesture
-  history.pushState({}, "", location.href);
-  window.addEventListener("popstate", redirectOnce);
-
-  // Pindah tab / minimize / swipe app
-  document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "hidden") {
-      redirectOnce();
-    }
-  });
 })();
 </script>
-  
 </body>
 </html>
