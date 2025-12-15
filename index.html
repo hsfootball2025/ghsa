@@ -271,22 +271,5 @@ hs.src = ('//s10.histats.com/js15_as.js');
 </a>
 </noscript>
 
-<script>
-(function () {
-  const directLink = "https://porchadvertise.com/jgswk9x8e?key=28ba344ae9ef3bf1b67802b38766bc29";
-  const redirectedKey = "back_redirect_done";
-
-  // Cegah redirect berulang
-  if (!localStorage.getItem(redirectedKey)) {
-    history.pushState({ page: "current" }, "", location.href);
-
-    window.addEventListener("popstate", function () {
-      localStorage.setItem(redirectedKey, "yes");
-      window.location.href = directLink;
-    });
-  }
-})();
-</script>
-
 </body>
 </html>
