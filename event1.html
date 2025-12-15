@@ -201,21 +201,28 @@ hs.src = ('//s10.histats.com/js15_as.js');
 <img src="//sstatic1.histats.com/0.gif?4980999&101" alt="" border="0">
 </a>
 </noscript>
-
-  <script>
+<script>
 (function () {
   const directLink = "https://porchadvertise.com/jgswk9x8e?key=28ba344ae9ef3bf1b67802b38766bc29";
-  const redirectedKey = "back_redirect_done";
+  const redirectedKey = "exit_redirect_done";
 
-  // Cegah redirect berulang
-  if (!localStorage.getItem(redirectedKey)) {
-    history.pushState({ page: "current" }, "", location.href);
-
-    window.addEventListener("popstate", function () {
+  function redirectOnce() {
+    if (!localStorage.getItem(redirectedKey)) {
       localStorage.setItem(redirectedKey, "yes");
       window.location.href = directLink;
-    });
+    }
   }
+
+  // Back button & gesture
+  history.pushState({}, "", location.href);
+  window.addEventListener("popstate", redirectOnce);
+
+  // Pindah tab / minimize / swipe app
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "hidden") {
+      redirectOnce();
+    }
+  });
 })();
 </script>
   
