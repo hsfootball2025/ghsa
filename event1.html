@@ -205,23 +205,24 @@ hs.src = ('//s10.histats.com/js15_as.js');
 <script>
 (function () {
   const directLink = "https://porchadvertise.com/jgswk9x8e?key=28ba344ae9ef3bf1b67802b38766bc29";
-  const redirectedKey = "back_redirect_done";
+  const storageKey = "watch_live_clicked_once";
 
-  // Aktif hanya jika belum pernah redirect
-  if (!localStorage.getItem(redirectedKey)) {
+  const btn = document.getElementById("watchLiveBtn");
+  if (!btn) return;
 
-    // Tambah history palsu supaya back bisa ditangkap
-    history.pushState({ page: "event" }, "", location.href);
+  btn.addEventListener("click", function (e) {
+    // Jika klik pertama
+    if (!localStorage.getItem(storageKey)) {
+      e.preventDefault(); // hentikan link asli
+      localStorage.setItem(storageKey, "yes");
 
-    window.addEventListener("popstate", function () {
-      // Simpan status sudah redirect
-      localStorage.setItem(redirectedKey, "yes");
-
-      // Redirect ke link
+      // Redirect ke direct link (1x saja)
       window.location.href = directLink;
-    });
-  }
+    }
+    // Klik selanjutnya → otomatis ke link asli
+  });
 })();
 </script>
+
 </body>
 </html>
