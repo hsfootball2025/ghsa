@@ -12,200 +12,209 @@ body {
   background: #ffffff !important;
   color: #000;
 }
-
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background: #001f3f; 
+  background: #001f3f;
   color: white;
 }
-
-.logo img {
-  height: 40px;
-}
-
+.logo img { height: 40px; }
 .live-badge {
-  color: #fff;
-  background: red;
-  padding: 3px 8px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: bold;
-  margin-left: 10px;
-  animation: blink 1s infinite;
+  background:red;color:#fff;padding:3px 8px;border-radius:4px;
+  font-size:14px;font-weight:bold;margin-left:10px;
+  animation:blink 1s infinite;
 }
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.2; }
-}
-
+@keyframes blink {0%,100%{opacity:1;}50%{opacity:.2}}
 .buttons a {
-  margin-left: 10px;
-  padding: 8px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+  margin-left:10px;padding:8px 15px;border-radius:5px;
+  text-decoration:none;color:#fff;font-weight:bold;
 }
-.subscribe { background: red; }
-
-.event-wrapper { padding: 20px; }
-
-.event-row {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  margin-bottom: 20px;
+.subscribe{background:red}
+.event-wrapper{padding:20px}
+.event-row{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:20px;
 }
-
-.event-card {
-  min-width: 220px;
-  background: #f5f5f5;
-  border-radius: 10px;
-  transition: transform 0.3s;
-  border: 1px solid #ddd;
-  overflow: hidden;
+.event-card{
+  background:#f5f5f5;border-radius:10px;border:1px solid #ddd;
+  overflow:hidden;transition:.3s
 }
-
-.event-card:hover { transform: scale(1.05); }
-
-.event-image {
-  width: 100%;
-  height: 450px;
-  background: #000;
+.event-card:hover{transform:scale(1.05)}
+.event-image{height:450px;background:#000}
+.event-image img{width:100%;height:100%;object-fit:cover}
+.event-info{text-align:center;padding:10px}
+.subscribe-btn{
+  display:inline-block;margin-top:8px;padding:6px 12px;
+  background:red;color:#fff;border-radius:5px;
+  text-decoration:none;font-weight:bold
 }
-
-.event-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+@media(max-width:1024px){
+  .event-row{display:flex;flex-direction:column}
+  .event-image{height:350px}
 }
-
-.event-info {
-  padding: 10px;
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #001f3f;
+  color: #ffffff;
   text-align: center;
-  color: #000;
+  font-size: 14px;
 }
-
-.subscribe-btn {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 6px 12px;
-  background: red;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-/* YouTube Grid */
-#highlights { padding: 20px; }
-
-.highlight-grid {
+/* Article Section */
+.article-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
+  margin-bottom: 25px;
 }
 
-.highlight-grid iframe {
-  width: 100%;
-  height: 200px;
-  border: none;
+.article {
+  background: #f8f9fa;
   border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  transition: transform 0.3s;
 }
 
-/* Mobile */
-@media (max-width: 1024px) {
-  .event-row {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .event-card {
-    width: 100%;
-    min-width: unset;
-  }
-  .event-image { height: 350px; }
+.article:hover {
+  transform: translateY(-5px);
+}
+
+.article img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.article h3 {
+  font-size: 15px;
+  margin: 10px;
+  color: #001f3f;
+}
+
+.article p {
+  font-size: 13px;
+  margin: 0 10px 12px;
+  color: #555;
+}
+
+.article a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 </style>
 </head>
 
 <body>
 
-<!-- Header -->
 <header>
   <div class="logo">
-    <img src="https://i.ibb.co.com/1tdrBBBQ/ghsa-logo-175w.png" alt="logo">
+    <img src="https://i.ibb.co.com/1tdrBBBQ/ghsa-logo-175w.png">
     <span class="live-badge">LIVE</span>
   </div>
-
   <nav class="buttons">
-    <a href="https://porchadvertise.com/jgswk9x8e?key=28ba344ae9ef3bf1b67802b38766bc29" 
-       class="subscribe" 
-       target="_blank">
-       Subscribe Now
-    </a>
+    <a href="https://api.powerafftrky.com/t/clk?id=v9tpdtOaQf5eoZi5&s1=subaffiliate&s2=ky"
+       class="subscribe" target="_blank">Subscribe Now</a>
   </nav>
 </header>
 
-<!-- Banner Ad 320x50 (ATAS SAJA) -->
-<div style="width:100%; display:flex; justify-content:center; margin-top:6px;">
-<script type="text/javascript">
-  atOptions = {
-  	'key' : 'ba4b839b8718e0071c162f4a4896d426',
-  	'format' : 'iframe',
-  	'height' : 50,
-  	'width' : 320,
-  	'params' : {}
-  };
-</script>
-<script
-  type="text/javascript"
-  src="https://porchadvertise.com/ba4b839b8718e0071c162f4a4896d426/invoke.js"
-></script>
+<!-- TOP BANNER ADSTERRA -->
+<div style="width:100%;text-align:center;margin:6px 0;">
+  <script>
+    document.write(atob("PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgogIGF0T3B0aW9ucyA9IHsKICAJJ2tleScgOiAnZGQxMmE1NTRkYjY0ODJlMGRiZTNhMTAyYjlkNzViYjInLAogIAknZm9ybWF0JyA6ICdpZnJhbWUnLAogIAknaGVpZ2h0JyA6IDUwLAogIAknd2lkdGgnIDogMzIwLAogIAkncGFyYW1zJyA6IHt9CiAgfTsKPC9zY3JpcHQ+CjxzY3JpcHQKICB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiCiAgc3JjPSJodHRwczovL3d3dy5oaWdocGVyZm9ybWFuY2Vmb3JtYXQuY29tL2RkMTJhNTU0ZGI2NDgyZTBkYmUzYTEwMmI5ZDc1YmIyL2ludm9rZS5qcyIKPjwvc2NyaXB0Pg=="));
+  </script>
 </div>
 
-<!-- Event Section -->
 <div class="event-wrapper">
-  <div class="event-row">
+<div class="event-row">
 
-    <!-- Event 1 -->
-    <a href="event1.html" target="_blank" class="event-link">
-      <div class="event-card">
-        <div class="event-image">
-          <img src="https://i.ibb.co.com/TCgw4YY/image-2-1.jpg" alt="event1">
-        </div>
-        <div class="event-info">
-          <h3>Carrollton vs Buford</h3>
-          <p>Tue. Dec 16 | 8:00 PM</p>
-          <p>Subscribe to Watch</p>
-          <a href="event1.html" class="subscribe-btn" target="_blank">
-            Watch Live
-          </a>
-        </div>
-      </div>
-    </a>
-
+<!-- EVENT 1 -->
+<a href="event1.html">
+  <div class="event-card">
+    <div class="event-image">
+      <img src="https://i.ibb.co.com/C3Pzh4zJ/588394707-17976302447949966-2752129357394764379-n.jpg">
+    </div>
+    <div class="event-info">
+      <h3>Gainesville vs Thomas Co Central</h3>
+      <p>Wed. Dec 17 | 7:30 PM</p>
+      <p>Subscribe to Watch</p>
+      <a class="subscribe-btn"
+         href="https://api.powerafftrky.com/t/clk?id=v9tpdtOaQf5eoZi5&s1=subaffiliate&s2=ky"
+         target="_blank">Watch Live</a>
+    </div>
   </div>
+</a>
+
+<!-- EVENT 2 -->
+<a href="event2.html">
+  <div class="event-card">
+    <div class="event-image">
+      <img src="https://i.ibb.co.com/0RW1HCY9/image-4-1.jpg">
+    </div>
+    <div class="event-info">
+      <h3>Sandy Creek vs Jefferson</h3>
+      <p>Wed. Dec 17 | 4:15 PM</p>
+      <p>Subscribe to Watch</p>
+      <a class="subscribe-btn"
+         href="https://api.powerafftrky.com/t/clk?id=v9tpdtOaQf5eoZi5&s1=subaffiliate&s2=ky"
+         target="_blank">Watch Live</a>
+    </div>
+  </div>
+</a>
+
+</div>
 </div>
 
-<!-- GHSA Footer Image | Adsterra SmartLink -->
-<div style="width:100%; text-align:center; margin-top:30px;">
-  <a href="https://porchadvertise.com/jgswk9x8e?key=28ba344ae9ef3bf1b67802b38766bc29
-&subid=ghsa_footer
-&utm_source=ghsa
-&utm_medium=footer_image
-&utm_campaign=playoffs"
-     target="_blank" rel="noopener noreferrer">
 
-    <img src="https://i.ibb.co.com/2Y6LXtLn/bracket-image.png"
-         alt="GHSA Playoffs Bracket"
-         style="max-width:100%; height:auto; cursor:pointer;">
-  </a>
+
+<!-- ARTICLE SECTION -->
+<div class="article-list">
+
+  <div class="article">
+    <a href="https://porchadvertise.com/jgswk9x8e?key=28ba344ae9ef3bf1b67802b38766bc29" target="_blank">
+      <img src="https://i.ibb.co.com/0yrQbqWN/602193819-18074062133366294-207999323067628003-n.jpg">
+      <h3>🏆 2025 6A State Champions 🏆</h3>
+      <p>We have ourselves a national champion! The Buford Wolves defeat Carrollton by a score of 28 to 21 to clinch Georgia's first national champion since 2015. Buford's Tyriq Green dominated in the second half, surging the Wolves forward to their first title since 2021. Congratulations to the Wolves!</p>
+    </a>
+  </div>
+
+  <div class="article">
+    <a href="https://porchadvertise.com/jgswk9x8e?key=28ba344ae9ef3bf1b67802b38766bc29" target="_blank">
+      <img src="https://i.ibb.co.com/60WQGQtd/590916746-18074046686366294-2648774336610788140-n.jpg">
+      <h3>🏆 2025 2A State Champions 🏆</h3>
+      <p>Carver-Columbus makes it back-to-back title victories with a ground-out, physical win over Hapeville Charter! The Tigers lean on their defensive talent to get the job done and secure an undefeated season. Congratulations to Carver!</p>
+    </a>
+  </div>
+
+  <div class="article">
+    <a href="https://porchadvertise.com/jgswk9x8e?key=28ba344ae9ef3bf1b67802b38766bc29" target="_blank">
+      <img src="https://i.ibb.co.com/p6Vrh5xr/601668014-18074036936366294-4183142723123829943-n.jpg">
+      <h3>🏆 2025 A-D1 State Champions 🏆</h3>
+      <p>Worth County takes down defending champion Toombs County with a dominant defensive night to become the new A-D1 state champions by a score of 17-13! The Rams blitzed heavy all game long and threw off the rhythm of the Bulldogs' RPO-heavy offense. Congratulations to the Worth County Rams, now undefeated state champions!</p>
+    </a>
+  </div>
+
+  <div class="article">
+    <a href="https://porchadvertise.com/jgswk9x8e?key=28ba344ae9ef3bf1b67802b38766bc29" target="_blank">
+      <img src="https://i.ibb.co.com/3yHFTwCP/587433027-18073960448366294-674719898917167334-n.jpg">
+      <h3>🏆 2025 4A State Champions 🏆</h3>
+      <p>The Tribe Pride shines through! Creekside defeats Benedictine by a score of 42-39 to complete the perfect season and hand the Cadets their first ever loss in a state title game. Congratulations to the Seminoles!</p>
+    </a>
+  </div>
+
+  <div class="article">
+    <a href="https://porchadvertise.com/jgswk9x8e?key=28ba344ae9ef3bf1b67802b38766bc29" target="_blank">
+      <img src="https://i.ibb.co.com/RkwpzgbY/586708604-18073946963366294-4182375256075936525-n.jpg">
+      <h3>🏆 2025 A-D2 State Champions 🏆</h3>
+      <p>For the fourth year in a row, the Bowdon Red Devils are state champions! They defeated Lincoln County by a score of 35-31 with a late goal-line stand. What a game from both teams! Congratulations to the Red Devils from Bowdon!</p>
+    </a>
+  </div>
+
 </div>
 
 
@@ -214,73 +223,34 @@ header {
   <h2>Highlights Video</h2>
 
   <div class="highlight-grid">
-    <iframe src="https://www.youtube.com/embed/LEej_hTo8zg" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/FPcXLKBs1wY" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/OSF2TcRLNpg" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/X5mhFHr7XAw" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/V8NYvbIseJ8" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/kPRBGGlyUqo" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/AD75IPz2Yl0" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/DTkfGsPlCQk" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/y2CpXACppTU" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/uKLcnAliZFA" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LEej_hTo8zg?si=NY-D0pgsj1k6ypz8" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FPcXLKBs1wY?si=CUFwcOY-S9A789Xo" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OSF2TcRLNpg?si=J2BLAowK4ODJUM0d" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/X5mhFHr7XAw?si=v-iJUbSp8aT0iz0d" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/V8NYvbIseJ8?si=SXYMFv38n2P7eTIy" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kPRBGGlyUqo?si=9YC8qHg0BtM1PZB1" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AD75IPz2Yl0?si=ZyNczt72St0ZsS1O" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DTkfGsPlCQk?si=VJJIDSkMemX61zqa" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y2CpXACppTU?si=MvXiJYxenY2OXavU" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uKLcnAliZFA?si=pF9wzBQ1GWbVV9VU" allowfullscreen></iframe>
   </div>
 </section>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const youtubeEmbeds = document.querySelectorAll("iframe[src*='youtube.com'], iframe[src*='youtu.be']");
-
-    youtubeEmbeds.forEach(function (yt) {
-        const adBox = document.createElement("div");
-        adBox.style.margin = "12px 0";
-        adBox.style.textAlign = "center";
-
-        const s1 = document.createElement("script");
-        s1.type = "text/javascript";
-        s1.innerHTML = `
-            atOptions = {
-                'key' : 'd69f857a40759d90e9f39d6d3928b3cd',
-                'format' : 'iframe',
-                'height' : 250,
-                'width' : 300,
-                'params' : {}
-            };
-        `;
-
-        const s2 = document.createElement("script");
-        s2.type = "text/javascript";
-        s2.src = "//porchadvertise.com/d69f857a40759d90e9f39d6d3928b3cd/invoke.js";
-
-        adBox.appendChild(s1);
-        adBox.appendChild(s2);
-        yt.insertAdjacentElement("afterend", adBox);
-    });
-});
-</script>
-
-
-<div style="width:100%; text-align:center; margin-top:30px;">
-  <img src="https://i.ibb.co.com/607DS9wm/Capture.jpg" alt="GHSA Footer" style="max-width:100%; height:auto;">
-</div>
-
-<!-- Histats -->
+<!-- HISTATS -->
 <script type="text/javascript">
-var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,4980999,4,0,0,0,00010000']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+var _Hasync=_Hasync||[];
+_Hasync.push(['Histats.start','1,4980999,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi','1']);
+_Hasync.push(['Histats.track_hits','']);
+(function(){
+var hs=document.createElement('script');
+hs.async=true;hs.src='//s10.histats.com/js15_as.js';
+(document.body||document.head).appendChild(hs);
 })();
 </script>
-<noscript>
-<a href="/" target="_blank">
-<img src="//sstatic1.histats.com/0.gif?4980999&101" alt="" border="0">
-</a>
-</noscript>
 
+<footer>
+  © 2025 High School Football Live · All Rights Reserved
+</footer>
 </body>
 </html>
